@@ -11,6 +11,7 @@ class Stack {
   }
 
   pop() {
+    if (!this.top) return null;
     const popped = this.top;
     this.top = popped.next;
     return popped.value;
